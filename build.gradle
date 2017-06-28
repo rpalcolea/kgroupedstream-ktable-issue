@@ -75,7 +75,7 @@ dependencies {
   compile("io.prometheus:simpleclient_hotspot:${prometheusVersion}")
   compile("org.apache.kafka:connect-runtime:${kafkaVersion}")
   compile("org.apache.kafka:connect-api:${kafkaVersion}")
-  compile("org.apache.kafka:kafka-streams:0.11.1.0-SNAPSHOT")
+  compile("org.apache.kafka:kafka-streams:${kafkaVersion}")
   testCompile "com.github.tomakehurst:wiremock:${wiremockVersion}"
   testCompile('org.springframework.boot:spring-boot-starter-test')
   testCompile("org.spockframework:spock-spring:${spockSpringVersion}")
