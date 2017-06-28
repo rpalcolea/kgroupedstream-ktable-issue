@@ -78,7 +78,6 @@ dependencies {
   compile("org.apache.kafka:kafka-streams:${kafkaVersion}")
   testCompile "com.github.tomakehurst:wiremock:${wiremockVersion}"
   testCompile('org.springframework.boot:spring-boot-starter-test')
-  testCompile("com.typesafe.akka:akka-testkit_2.11:${akkaVersion}")
   testCompile("org.spockframework:spock-spring:${spockSpringVersion}")
   testCompile "com.github.rholder:guava-retrying:${guavaRetryVersion}"
 }
