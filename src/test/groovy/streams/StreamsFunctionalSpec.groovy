@@ -46,6 +46,7 @@ class StreamsFunctionalSpec extends Specification {
 
     then:
     nextMessages.size() != 0
+    nextMessages.find { it.key() == key}
   }
 
 }
