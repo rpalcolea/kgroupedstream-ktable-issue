@@ -54,7 +54,7 @@ open class StreamAggregatorConfig {
         props.put(StreamsConfig.POLL_MS_CONFIG, streamProperties.config.get("pollMs") ?: 500)
         props.put(StreamsConfig.BUFFERED_RECORDS_PER_PARTITION_CONFIG, streamProperties.config.get("bufferedRecordsPerPartition") ?: 1000)
         props.put(StreamsConfig.STATE_DIR_CONFIG, streamProperties.config.get("stateDir").toString() + System.currentTimeMillis())
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, consumerProperties.config.get("groupId") ?: "redskyStreamAggregator")
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, consumerProperties.config.get("groupId") ?: "streamAggregator")
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, consumerProperties.config.get("autoOffsetReset") ?: "latest")
         return props
     }
